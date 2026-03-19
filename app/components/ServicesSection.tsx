@@ -145,7 +145,7 @@ export function ServicesSection() {
         {/* Header */}
         <div className="text-center">
           <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
-            Everything you need to build your <span className="font-bold text-blue-700">product</span>
+            From Idea to Reality — <span className="font-bold text-blue-700">We&apos;ve Got You Covered</span>
           </h2>
           <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
             A focused set of services for web, mobile, and AI — start small or

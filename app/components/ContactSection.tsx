@@ -32,7 +32,10 @@ export function ContactSection() {
   return (
     <>
       {/* ── Top CTA banner ─────────────────────────────────────────── */}
-      <AnimatedSection className="border-t border-black/5 bg-zinc-50 rounded-4xl max-w-7xl md:mx-auto mb-12" delay={0.05}>
+      <AnimatedSection
+        className="border-t border-black/5 bg-zinc-50 rounded-4xl max-w-7xl md:mx-auto mb-12"
+        delay={0.05}
+      >
         <section className="px-6 md:px-18 py-10 md:py-20">
           {/* Top: eyebrow + headline + CTA */}
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
@@ -69,8 +72,12 @@ export function ContactSection() {
                   0{i + 1}
                 </span>
                 <div>
-                  <p className="text-sm md:text-xl font-semibold text-zinc-900">{h.label}</p>
-                  <p className="mt-1.5 text-sm md:text-lg leading-6 text-zinc-500">{h.desc}</p>
+                  <p className="text-sm md:text-xl font-semibold text-zinc-900">
+                    {h.label}
+                  </p>
+                  <p className="mt-1.5 text-sm md:text-lg leading-6 text-zinc-500">
+                    {h.desc}
+                  </p>
                 </div>
               </div>
             ))}
@@ -80,18 +87,17 @@ export function ContactSection() {
 
       {/* ── Contact Form ────────────────────────────────────────────── */}
       <AnimatedSection className="bg-zinc-50" delay={0.05}>
-        <section
-          id="contact"
-          className="mx-auto max-w-7xl px-4 py-20 md:px-4"
-        >
+        <section id="contact" className="mx-auto max-w-7xl px-4 py-20 md:px-4">
           {/* Section header */}
+
           <div className="mb-12 text-center">
-            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
               Let's build something{" "}
               <span className="font-bold text-blue-700">great together</span>
             </h2>
-            <p className="mt-3 text-sm leading-7 text-zinc-500">
-              Tell us about your project and we'll get back to you within 24 hours.
+            <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
+              Tell us about your project and we'll get back to you within 24
+              hours.
             </p>
           </div>
 
@@ -109,13 +115,26 @@ export function ContactSection() {
             {submitted ? (
               <div className="relative z-10 flex flex-col items-center gap-4 py-12 text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-blue-50">
-                  <svg viewBox="0 0 24 24" fill="none" className="h-8 w-8 text-blue-600" stroke="currentColor" strokeWidth={1.75}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    className="h-8 w-8 text-blue-600"
+                    stroke="currentColor"
+                    strokeWidth={1.75}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4.5 12.75l6 6 9-13.5"
+                    />
                   </svg>
                 </div>
-                <h3 className="text-lg font-semibold text-zinc-900">Message sent!</h3>
+                <h3 className="text-lg font-semibold text-zinc-900">
+                  Message sent!
+                </h3>
                 <p className="max-w-sm text-sm text-zinc-500">
-                  Thanks for reaching out. We'll review your project and get back to you within 24 hours.
+                  Thanks for reaching out. We'll review your project and get
+                  back to you within 24 hours.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -125,10 +144,7 @@ export function ContactSection() {
                 </button>
               </div>
             ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="relative z-10 space-y-6"
-              >
+              <form onSubmit={handleSubmit} className="relative z-10 space-y-6">
                 {/* Row 1 — First & Last name */}
                 <div className="grid gap-4 sm:grid-cols-2">
                   <div className="flex flex-col gap-1.5">
@@ -183,7 +199,8 @@ export function ContactSection() {
                 {/* Row 3 — Project description */}
                 <div className="flex flex-col gap-1.5">
                   <label className="text-xs md:text-sm font-semibold uppercase tracking-wide text-zinc-500">
-                    Describe Your Project <span className="text-blue-600">*</span>
+                    Describe Your Project{" "}
+                    <span className="text-blue-600">*</span>
                   </label>
                   <textarea
                     required
@@ -207,18 +224,34 @@ export function ContactSection() {
                     }`}
                   >
                     {agreed && (
-                      <svg viewBox="0 0 12 12" fill="none" className="h-3 md:h-4 w-3 md:w-4">
-                        <path d="M2 6l3 3 5-5" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+                      <svg
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        className="h-3 md:h-4 w-3 md:w-4"
+                      >
+                        <path
+                          d="M2 6l3 3 5-5"
+                          stroke="white"
+                          strokeWidth="1.8"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     )}
                   </button>
                   <p className="text-sm md:text-xl leading-6 text-zinc-500">
                     I agree to the{" "}
-                    <a href="#" className="font-medium text-blue-600 underline underline-offset-2 hover:text-blue-700">
+                    <a
+                      href="#"
+                      className="font-medium text-blue-600 underline underline-offset-2 hover:text-blue-700"
+                    >
                       Terms & Conditions
                     </a>{" "}
                     and{" "}
-                    <a href="#" className="font-medium text-blue-600 underline underline-offset-2 hover:text-blue-700">
+                    <a
+                      href="#"
+                      className="font-medium text-blue-600 underline underline-offset-2 hover:text-blue-700"
+                    >
                       Privacy Policy
                     </a>
                     .

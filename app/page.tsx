@@ -12,37 +12,18 @@ import { HowItWorks } from "./components/HowItWorks";
 import { TechnologiesSection } from "./components/TechnologiesSection";
 
 export default function Home() {
-  const faqs = [
-    {
-      q: "Is VARXUS a good fit for my startup?",
-      a: "If you need a small, senior team to move fast without overcomplicating things, VARXUS is a strong fit.",
-    },
-    {
-      q: "Do you only build MVPs?",
-      a: "We start with MVPs, then stay on to harden, scale, and maintain the product if you need us.",
-    },
-    {
-      q: "Can you help with just design or just development?",
-      a: "Yes. We can plug into your existing team as product engineers, designers, or both.",
-    },
-    {
-      q: "How long does an MVP usually take?",
-      a: "Most MVPs we ship land between 8–12 weeks depending on scope and integrations.",
-    },
-  ];
-
   return (
     <div className="min-h-screen bg-white text-zinc-950">
       <Navbar />
 
       <main>
         <HeroSection />
-        <ServicesSection />
         <WorkSection />
+        <ServicesSection />
         <HowItWorks />
         <TechnologiesSection />
         <ReviewsSection />
-        <FAQSection faqs={faqs} />
+        <FAQSection />
         <ContactSection />
       </main>
 

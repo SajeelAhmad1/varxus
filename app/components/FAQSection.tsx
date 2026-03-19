@@ -3,14 +3,34 @@
 import { useState } from "react";
 import { AnimatedSection } from "./AnimatedSection";
 
-type FAQ = { q: string; a: string };
-
-interface FAQSectionProps {
-  faqs: FAQ[];
-}
-
-export function FAQSection({ faqs }: FAQSectionProps) {
+export function FAQSection() {
   const [open, setOpen] = useState<number | null>(null);
+  const faqs = [
+    {
+      q: "Is VARXUS a good fit for my startup?",
+      a: "If you need a small, senior team to move fast without overcomplicating things, VARXUS is a strong fit.",
+    },
+    {
+      q: "What services do you offer?",
+      a: "We provide end-to-end digital solutions including website development, cross-platform apps, UI/UX design, AI integrations, and dedicated team hiring.",
+    },
+    {
+      q: "Do you build both web and mobile applications?",
+      a: "Yes, we develop dynamic web applications, single-page apps, progressive web apps, as well as mobile applications.",
+    },
+    {
+      q: "Do you offer AI-based solutions?",
+      a: "Yes, we specialize in AI integrations, including intelligent chatbots and custom AI-powered features using modern technologies.",
+    },
+    {
+      q: "Do you build MVPs for startups?",
+      a: "Definitely. We help startups quickly build and launch MVPs to validate ideas and enter the market faster.",
+    },
+    {
+      q: "Can I hire dedicated developers or designers?",
+      a: "Yes, we offer flexible team augmentation, allowing you to hire developers, designers, or project managers based on your project needs.",
+    },
+  ];
 
   return (
     <AnimatedSection className="bg-white" delay={0.05}>
@@ -69,7 +89,7 @@ export function FAQSection({ faqs }: FAQSectionProps) {
                 boxShadow:
                   "0 20px 64px -6px rgba(0,0,0,0.12), 0 0 0 1px rgba(74,108,247,0.06)",
               }}
-              className="rounded-2xl bg-zinc-50 p-8 text-center"
+              className="rounded-2xl bg-zinc-50 py-20 px-8 text-center h-100"
             >
               {/* Avatar stack */}
               {/* <div className="flex justify-center">
