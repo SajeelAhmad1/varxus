@@ -209,7 +209,7 @@ function TechCard({
       style={{
         transform: "perspective(800px)",
         boxShadow:
-          "0 28px 64px -6px rgba(0,0,0,0.12), 0 0 0 1px rgba(74,108,247,0.06)",
+          "0 20px 64px -12px rgba(0,0,0,0.12), 0 0 0 1px rgba(74,108,247,0.06)",
       }}
     >
       {/* gradient depth backdrop */}

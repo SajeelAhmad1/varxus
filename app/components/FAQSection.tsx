@@ -14,10 +14,7 @@ export function FAQSection({ faqs }: FAQSectionProps) {
 
   return (
     <AnimatedSection className="bg-white" delay={0.05}>
-      <section
-        id="faq"
-        className="mx-auto max-w-7xl px-4 py-16 md:px-6"
-      >
+      <section id="faq" className="mx-auto max-w-7xl px-4 py-20 md:px-6">
         {/* Centered header */}
         <div className="text-center">
           <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
@@ -30,7 +27,6 @@ export function FAQSection({ faqs }: FAQSectionProps) {
 
         {/* Two-col: FAQs left, CTA card right */}
         <div className="mt-12 grid gap-8 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)] lg:items-start">
-
           {/* FAQ list — plain dividers, no cards */}
           <div className="divide-y divide-black/[0.06]">
             {faqs.map((item, i) => (
@@ -49,7 +45,11 @@ export function FAQSection({ faqs }: FAQSectionProps) {
                     stroke="currentColor"
                     strokeWidth={2}
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
                 {open === i && (
@@ -63,7 +63,14 @@ export function FAQSection({ faqs }: FAQSectionProps) {
 
           {/* CTA card */}
           <div className="lg:sticky lg:top-24">
-            <div className="rounded-2xl bg-[#4A6CF7] p-8 text-center">
+            <div
+              style={{
+                transform: "perspective(800px)",
+                boxShadow:
+                  "0 20px 64px -6px rgba(0,0,0,0.12), 0 0 0 1px rgba(74,108,247,0.06)",
+              }}
+              className="rounded-2xl bg-zinc-50 p-8 text-center"
+            >
               {/* Avatar stack */}
               {/* <div className="flex justify-center">
                 <div className="flex -space-x-3">
@@ -79,21 +86,21 @@ export function FAQSection({ faqs }: FAQSectionProps) {
                 </div>
               </div> */}
 
-              <p className="mt-5 text-xl md:text-2xl font-semibold leading-snug text-white">
+              <p className="mt-5 text-xl md:text-2xl font-semibold leading-snug text-zinc-900">
                 Still have questions?
               </p>
-              <p className="mt-3 text-sm md:text-xl leading-6 text-blue-200">
-                Can't find the answer you're looking for? Please reach out to our team.
+              <p className="mt-3 text-sm md:text-xl leading-6 text-zinc-500">
+                Can't find the answer you're looking for? Please reach out to
+                our team.
               </p>
               <a
                 href="mailto:hello@varxus.com"
-                className="mt-8 inline-flex h-10 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-blue-600 transition hover:bg-blue-50"
+                className="mt-8 inline-flex h-10 items-center justify-center rounded-full bg-blue-600 px-6 text-sm font-semibold text-white transition hover:bg-blue-700"
               >
                 Get in touch
               </a>
             </div>
           </div>
-
         </div>
       </section>
     </AnimatedSection>

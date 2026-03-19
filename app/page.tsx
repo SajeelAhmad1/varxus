@@ -50,6 +50,7 @@ export default function Home() {
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm md:text-xl text-blue-100 md:flex-row md:items-center md:justify-between md:px-6">
           <div className="space-y-1">
             <p className="font-semibold">Varxus — Software House</p>
+            <p className="text-sm">hello@varxus.com</p>
             <p className="text-xs md:text-lg text-blue-300">
               Building modern web, mobile, and AI products with small, focused
               teams.

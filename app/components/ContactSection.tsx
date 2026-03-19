@@ -32,18 +32,18 @@ export function ContactSection() {
   return (
     <>
       {/* ── Top CTA banner ─────────────────────────────────────────── */}
-      <AnimatedSection className="border-t border-black/5 bg-[#4A6CF7] rounded-4xl mx-[14px] max-w-7xl md:mx-auto" delay={0.05}>
-        <section className="px-6 md:px-18 py-10 md:py-20 lg:max-w-7xl">
+      <AnimatedSection className="border-t border-black/5 bg-zinc-50 rounded-4xl max-w-7xl md:mx-auto mb-12" delay={0.05}>
+        <section className="px-6 md:px-18 py-10 md:py-20">
           {/* Top: eyebrow + headline + CTA */}
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <div className="max-w-xl">
-              <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-blue-200">
+              <p className="text-xs md:text-sm font-semibold uppercase tracking-[0.18em] text-zinc-500">
                 Work with us
               </p>
-              <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight text-white">
+              <h2 className="mt-3 text-3xl md:text-5xl font-semibold tracking-tight text-zinc-900">
                 We work just like you.
               </h2>
-              <p className="mt-4 text-sm md:text-xl leading-7 text-blue-100">
+              <p className="mt-4 text-sm md:text-xl leading-7 text-zinc-800">
                 Get a dedicated VARXUS team or let us build your product from
                 scratch. Either way, you get a calm, reliable partner focused on
                 outcomes — not hours billed.
@@ -51,7 +51,7 @@ export function ContactSection() {
             </div>
             <a
               href="#contact"
-              className="inline-flex h-13 shrink-0 items-center justify-center gap-2 rounded-full bg-white px-6 text-sm md:text-xl font-semibold text-blue-600 shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-50"
+              className="inline-flex h-13 shrink-0 items-center justify-center gap-2 rounded-full bg-blue-600 px-6 text-sm md:text-xl font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-blue-50"
             >
               Contact Us
               <ArrowRight className="h-4 w-4" />
@@ -65,12 +65,12 @@ export function ContactSection() {
           <div className="mt-10 grid gap-8 sm:grid-cols-3">
             {highlights.map((h, i) => (
               <div key={h.label} className="flex gap-4">
-                <span className="mt-0.5 text-xs font-bold tabular-nums text-blue-300">
+                <span className="mt-0.5 text-xs font-bold tabular-nums text-zinc-900">
                   0{i + 1}
                 </span>
                 <div>
-                  <p className="text-sm md:text-xl font-semibold text-white">{h.label}</p>
-                  <p className="mt-1.5 text-sm md:text-lg leading-6 text-blue-100">{h.desc}</p>
+                  <p className="text-sm md:text-xl font-semibold text-zinc-900">{h.label}</p>
+                  <p className="mt-1.5 text-sm md:text-lg leading-6 text-zinc-500">{h.desc}</p>
                 </div>
               </div>
             ))}

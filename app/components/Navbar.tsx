@@ -118,7 +118,7 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-[100] border-b border-black/5 bg-white/95 backdrop-blur">
-      <div className="bg-[#4A6CF7]">
+      {/* <div className="bg-[#4A6CF7]">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2 md:py-3 text-xs font-medium text-white md:px-4">
           <div className="flex gap-1">
             <MailIcon className="h-4 md:h-6 w-4 md:w-6" />
@@ -137,7 +137,7 @@ export function Navbar() {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:py-6 md:px-4">
         <Link href="/" className="flex items-center gap-2" aria-label="VARXUS">
           <Image src="/logo.png" alt="VARXUS logo" width={44} height={44} />

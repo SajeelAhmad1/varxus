@@ -123,7 +123,7 @@ export function HeroSection() {
             Your Tech Partners for Transforming Ideas into Reality,{" "}
             <span className="text-blue-700">Months Faster</span>
           </h1>
-          <p className="mt-5 text-base leading-7 text-zinc-600 md:text-xl">
+          <p className="mt-5 text-base leading-7 text-zinc-600 md:text-">
             We help technology-first companies deliver software and business
             value faster by bringing in best development practices and skills
             that unblock in-house teams.
