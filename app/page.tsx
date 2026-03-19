@@ -47,26 +47,26 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-black/5 bg-blue-950">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-blue-100 md:flex-row md:items-center md:justify-between md:px-6">
+        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-8 text-sm md:text-xl text-blue-100 md:flex-row md:items-center md:justify-between md:px-6">
           <div className="space-y-1">
             <p className="font-semibold">Varxus — Software House</p>
-            <p className="text-xs text-blue-300">
+            <p className="text-xs md:text-lg text-blue-300">
               Building modern web, mobile, and AI products with small, focused
               teams.
             </p>
           </div>
           <div className="flex items-center gap-4 text-xs text-blue-200">
             <a href="#" className="hover:text-white">
-              <InstagramIcon className="h-4 w-4" />
+              <InstagramIcon className="h-6 w-6" />
             </a>
             <a href="#" className="hover:text-white">
-              <XIcon className="h-4 w-4" />
+              <XIcon className="h-6 w-6" />
             </a>
             <a href="#" className="hover:text-white">
-              <LinkedinIcon className="h-4 w-4" />
+              <LinkedinIcon className="h-6 w-6" />
             </a>
           </div>
-          <p className="text-xs text-blue-300">
+          <p className="text-xs md:text-lg text-blue-300">
             © {new Date().getFullYear()} VARXUS. All rights reserved.
           </p>
         </div>

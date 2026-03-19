@@ -79,10 +79,10 @@ export function WorkSection() {
 
         {/* Header — centered */}
         <div className="text-center">
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
             <span className="font-bold text-blue-700">Projects</span>  we like to build
           </h2>
-          <p className="mt-3 text-sm leading-7 text-zinc-500">
+          <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
             A quick overview of typical engagements with VARXUS.
           </p>
         </div>
@@ -125,13 +125,13 @@ export function WorkSection() {
                     exit={{ opacity: 0, y: -14 }}
                     transition={{ duration: 0.35, ease: "easeOut" }}
                   >
-                    <span className={`inline-block rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest ring-1 ${p.accentBg} ${p.accentText} ${p.accentRing}`}>
+                    <span className={`inline-block rounded-full px-2.5 py-1 text-[12px] md:text-[16px] font-semibold uppercase tracking-widest ring-1 ${p.accentBg} ${p.accentText} ${p.accentRing}`}>
                       {p.tag}
                     </span>
-                    <h3 className="mt-5 text-2xl font-semibold leading-snug tracking-tight text-zinc-950 md:text-3xl">
+                    <h3 className="mt-5 text-2xl md:text-4xl font-semibold leading-snug tracking-tight text-zinc-950">
                       {p.title}
                     </h3>
-                    <p className="mt-4 text-sm leading-7 text-zinc-500">
+                    <p className="mt-4 text-sm md:text-lg leading-7 text-zinc-500">
                       {p.desc}
                     </p>
                   </motion.div>

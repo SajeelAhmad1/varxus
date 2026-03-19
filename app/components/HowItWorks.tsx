@@ -90,8 +90,8 @@ function StepCard({
       </div>
 
       <div className="space-y-2">
-        <h3 className="text-lg font-bold text-zinc-900">{step.title}</h3>
-        <p className="text-sm leading-relaxed text-zinc-500">
+        <h3 className="text-lg md:text-xl font-semibold text-zinc-900">{step.title}</h3>
+        <p className="text-sm md:text-lg leading-relaxed text-zinc-500">
           {step.description}
         </p>
       </div>
@@ -128,7 +128,7 @@ export function HowItWorks() {
         style={{ background: "#4A6CF7" }}
       />
 
-      <div className="relative mx-auto max-w-6xl px-4 md:px-6">
+      <div className="relative mx-auto max-w-7xl px-4 md:px-6">
         {/* Section header */}
         <motion.div
           ref={headingRef}
@@ -138,10 +138,10 @@ export function HowItWorks() {
           className="mb-16 text-center"
         >
           <div className="text-center">
-            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
               How it works
             </h2>
-            <p className="mt-3 text-sm leading-7 text-zinc-500">
+            <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
               From first conversation to final launch — a clear, collaborative
               process built around your success.
             </p>
@@ -174,14 +174,14 @@ export function HowItWorks() {
         >
           <a
             href="#contact"
-            className="rounded-full px-7 py-3 text-sm font-semibold text-white shadow-md transition-opacity hover:opacity-90"
+            className="rounded-full px-7 py-4 text-sm md:text-lg font-semibold text-white shadow-md transition-opacity hover:opacity-90"
             style={{ background: "#4A6CF7" }}
           >
             Start Your Project
           </a>
           <a
             href="#work"
-            className="rounded-full border border-black/10 bg-white px-7 py-3 text-sm font-semibold text-zinc-700 transition-colors hover:bg-zinc-100"
+            className="rounded-full border border-black/10 bg-white px-7 py-4 text-sm md:text-lg font-semibold text-zinc-700 transition-colors hover:bg-zinc-100"
           >
             See Our Work
           </a>

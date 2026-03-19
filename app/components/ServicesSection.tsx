@@ -140,14 +140,14 @@ export function ServicesSection() {
     <AnimatedSection delay={0.03}>
       <section
         id="services"
-        className="mx-auto max-w-5xl px-4 py-16 md:px-6 lg:max-w-5xl"
+        className="mx-auto max-w-7xl px-4 py-16 md:px-6"
       >
         {/* Header */}
         <div className="text-center">
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
             Everything you need to build your <span className="font-bold text-blue-700">product</span>
           </h2>
-          <p className="mt-3 text-sm leading-7 text-zinc-500">
+          <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
             A focused set of services for web, mobile, and AI — start small or
             go full scale.
           </p>
@@ -158,7 +158,7 @@ export function ServicesSection() {
           {services.map((s) => (
             <div
               key={s.title}
-              className="relative flex flex-col items-center rounded-3xl border border-zinc-100 bg-white px-8 py-6 text-center"
+              className="relative flex flex-col items-center rounded-3xl border border-zinc-100 bg-white px-8 py-6 text-center md:h-[300px] md:w-[400px]" 
               style={{
                 transform: "perspective(800px)",
                 boxShadow:
@@ -170,14 +170,14 @@ export function ServicesSection() {
               <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-b from-white to-zinc-50" />
 
               {/* Icon circle */}
-              <div className="relative z-10 flex h-16 w-16 items-center justify-center rounded-full bg-blue-50 text-blue-500">
+              <div className="relative z-10 flex h-18 w-18 items-center justify-center rounded-full bg-blue-50 text-blue-500">
                 {s.icon}
               </div>
 
-              <h3 className="relative z-10 mt-6 text-base font-semibold text-zinc-900">
+              <h3 className="relative z-10 mt-6 text-base md:text-xl font-semibold text-zinc-900">
                 {s.title}
               </h3>
-              <p className="relative z-10 mt-2 text-sm leading-6 text-zinc-500">
+              <p className="relative z-10 mt-2 text-sm md:text-lg leading-6 text-zinc-500">
                 {s.desc}
               </p>
             </div>

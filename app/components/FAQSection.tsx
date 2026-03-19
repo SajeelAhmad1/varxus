@@ -16,14 +16,14 @@ export function FAQSection({ faqs }: FAQSectionProps) {
     <AnimatedSection className="bg-white" delay={0.05}>
       <section
         id="faq"
-        className="mx-auto max-w-6xl px-4 py-16 md:px-6 lg:max-w-7xl"
+        className="mx-auto max-w-7xl px-4 py-16 md:px-6"
       >
         {/* Centered header */}
         <div className="text-center">
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
             Frequently asked questions
           </h2>
-          <p className="mt-3 text-sm leading-7 text-zinc-500">
+          <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
             Here's what founders usually ask us before we start.
           </p>
         </div>
@@ -39,7 +39,7 @@ export function FAQSection({ faqs }: FAQSectionProps) {
                   onClick={() => setOpen(open === i ? null : i)}
                   className="flex w-full items-center justify-between gap-6 py-5 text-left"
                 >
-                  <span className="text-sm font-medium text-zinc-800">
+                  <span className="text-sm md:text-xl font-medium text-zinc-800">
                     {item.q}
                   </span>
                   <svg
@@ -53,7 +53,7 @@ export function FAQSection({ faqs }: FAQSectionProps) {
                   </svg>
                 </button>
                 {open === i && (
-                  <p className="pb-5 pr-10 text-sm leading-7 text-zinc-500">
+                  <p className="pb-5 pr-10 text-sm md:text-lg leading-7 text-zinc-500">
                     {item.a}
                   </p>
                 )}
@@ -79,15 +79,15 @@ export function FAQSection({ faqs }: FAQSectionProps) {
                 </div>
               </div> */}
 
-              <p className="mt-5 text-xl font-semibold leading-snug text-white">
+              <p className="mt-5 text-xl md:text-2xl font-semibold leading-snug text-white">
                 Still have questions?
               </p>
-              <p className="mt-2 text-sm leading-6 text-blue-200">
+              <p className="mt-3 text-sm md:text-xl leading-6 text-blue-200">
                 Can't find the answer you're looking for? Please reach out to our team.
               </p>
               <a
                 href="mailto:hello@varxus.com"
-                className="mt-6 inline-flex h-10 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-blue-600 transition hover:bg-blue-50"
+                className="mt-8 inline-flex h-10 items-center justify-center rounded-full bg-white px-6 text-sm font-semibold text-blue-600 transition hover:bg-blue-50"
               >
                 Get in touch
               </a>

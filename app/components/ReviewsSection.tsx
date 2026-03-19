@@ -27,12 +27,12 @@ export function ReviewsSection() {
 
   return (
     <AnimatedSection className="border-t border-black/5 bg-white" delay={0.05}>
-      <section id="reviews" className="mx-auto max-w-6xl px-4 py-16 md:px-6">
+      <section id="reviews" className="mx-auto max-w-7xl px-4 py-16 md:px-6">
         <div className="text-center">
-          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+          <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
             What founders say about working with <span className="font-bold text-blue-700">VARXUS</span>
           </h2>
-          <p className="mt-3 text-sm leading-7 text-zinc-500">
+          <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
             Short, practical feedback from teams we’ve helped ship products
             with.
           </p>
@@ -42,16 +42,16 @@ export function ReviewsSection() {
           {reviews.map((r) => (
             <div
               key={r.company}
-              className="flex flex-col justify-between rounded-2xl border border-black/10 bg-white p-6 text-sm shadow-sm"
+              className="flex flex-col justify-between rounded-2xl border border-black/10 bg-white px-6 py-8 text-sm md:text-lg shadow-sm"
             >
               <p className="text-xs font-semibold uppercase tracking-[0.16em] text-yellow-300">
                 ★★★★★
               </p>
-              <p className="mt-3 text-sm leading-6 text-zinc-700">{r.quote}</p>
-              <p className="mt-4 text-xs font-semibold text-zinc-900">
+              <p className="mt-3 text-sm md:text-lg leading-6 text-zinc-700">{r.quote}</p>
+              <p className="mt-4 text-xs md:text-sm font-semibold text-zinc-900">
                 {r.name}
               </p>
-              <p className="text-xs text-zinc-500">{r.company}</p>
+              <p className="text-xs md:text-sm text-zinc-500">{r.company}</p>
             </div>
           ))}
         </div>

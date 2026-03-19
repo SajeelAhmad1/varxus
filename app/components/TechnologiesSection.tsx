@@ -220,7 +220,7 @@ function TechCard({
         {icon}
       </div>
 
-      <p className="relative z-10 mt-4 text-sm font-semibold text-zinc-900">
+      <p className="relative z-10 mt-4 text-sm md:text-lg font-regular text-zinc-900">
         {name}
       </p>
     </motion.div>
@@ -251,7 +251,7 @@ function CategoryRow({
     >
       {/* Category label */}
       <div className="w-full shrink-0 md:w-36 md:pt-7">
-        <span className="inline-block rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-zinc-500">
+        <span className="inline-block rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-sm font-semibold uppercase tracking-widest text-zinc-500">
           {label}
         </span>
       </div>
@@ -282,7 +282,7 @@ export function TechnologiesSection() {
     <AnimatedSection delay={0.03}>
       <section
         id="technologies"
-        className="mx-auto max-w-5xl px-4 py-16 md:px-6"
+        className="mx-auto max-w-7xl px-4 py-16 md:px-6"
       >
         {/* ── Section header (exact pattern from spec) ── */}
         <motion.div
@@ -293,11 +293,11 @@ export function TechnologiesSection() {
           className="mb-16 text-center"
         >
           <div className="text-center">
-            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-3xl">
+            <h2 className="mt-4 text-2xl font-semibold tracking-tight text-zinc-950 md:text-4xl">
               Built with the tools that{" "}
               <span className="font-bold text-blue-700">power modern products</span>
             </h2>
-            <p className="mt-3 text-sm leading-7 text-zinc-500">
+            <p className="mt-3 text-sm md:text-xl leading-7 text-zinc-500">
               We work with the best-in-class stack across frontend, backend,
               mobile, and AI — so your product is fast, scalable, and future-proof.
             </p>

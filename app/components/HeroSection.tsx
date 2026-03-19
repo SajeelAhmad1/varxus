@@ -111,7 +111,7 @@ export function HeroSection() {
 
       {/* ── Content — sits above all bg elements ── */}
       <div
-        className="relative mx-auto max-w-6xl px-4 pb-16 pt-16 md:px-6 md:pb-24 md:pt-20 lg:max-w-7xl"
+        className="relative mx-auto max-w-7xl px-4 pb-16 pt-16 md:pb-24 md:pt-20"
         style={{ zIndex: 10 }}
       >
         <AnimatedSection className="mx-auto max-w-3xl text-center" delay={0}>
@@ -123,7 +123,7 @@ export function HeroSection() {
             Your Tech Partners for Transforming Ideas into Reality,{" "}
             <span className="text-blue-700">Months Faster</span>
           </h1>
-          <p className="mt-5 text-base leading-7 text-zinc-600 md:text-lg">
+          <p className="mt-5 text-base leading-7 text-zinc-600 md:text-xl">
             We help technology-first companies deliver software and business
             value faster by bringing in best development practices and skills
             that unblock in-house teams.
@@ -169,10 +169,10 @@ export function HeroSection() {
           ].map((c) => (
             <div
               key={c.title}
-              className="rounded-2xl border border-black/[0.06] bg-white p-5 text-left shadow-lg"
+              className="rounded-2xl border border-black/[0.06] bg-white p-5 md:p-7 text-left shadow-lg"
             >
-              <p className="text-sm font-regular text-zinc-950">{c.title}</p>
-              <p className="mt-1.5 text-[13px] leading-6 text-zinc-700">{c.desc}</p>
+              <p className="text-sm md:text-xl font-regular text-zinc-950">{c.title}</p>
+              <p className="mt-1.5 text-[13px] md:text-[16px] leading-6 text-zinc-700">{c.desc}</p>
             </div>
           ))}
         </AnimatedSection>
